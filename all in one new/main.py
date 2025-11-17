@@ -3,7 +3,7 @@ import tkinter as tk
 root = tk.Tk()
 
 root.geometry("500x400")
-root.title("file reader")
+root.title("bad IDE")
 
 def read():
     filename = txtb1.get('1.0', 'end-1c')
@@ -33,11 +33,12 @@ txtb1.pack(padx=12, pady=12)
 out = tk.Text(root, height=4, font=('Arial', 15))
 out.pack(padx=12, pady=12)
 
-btn1 = tk.Button(root, text="read", font=('Arial', 15), command=read)
+btn1 = tk.Button(root, text="load", font=('Arial', 15), command=read)
 btn1.pack(padx=12, pady=12)
 
 btn2 = tk.Button(root, text="save", font=('Arial', 15), command=save)
 btn2.pack(padx=12, pady=12)
 
 root.mainloop()
+
 
