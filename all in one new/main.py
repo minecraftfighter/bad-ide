@@ -4,6 +4,7 @@ root = tk.Tk()
 
 root.geometry("500x400")
 root.title("bad IDE")
+root.configure(bg="#B9F7FC")
 
 def read():
     filename = txtb1.get('1.0', 'end-1c')
@@ -40,5 +41,6 @@ btn2 = tk.Button(root, text="save", font=('Arial', 15), command=save)
 btn2.pack(padx=12, pady=12)
 
 root.mainloop()
+
 
 
